@@ -1,0 +1,46 @@
+Conceptual Problem
+Nama: Frederick Kurniawan Putra
+Batch : FTDS-016-HCK
+
+1. Jelaskan apa yang dimaksud dengan NoSQL menggunakan pemahaman yang kalian ketahui !
+NoSQL is a database approach that are different from traditional database that use relational and structured.
+While NOSQL can store structured data, it can also stored semi-structured and un-structured data.
+NoSQL also store its data into one data structure such as JSON. Since NoSQL do not use schema and relational such as Relational Database,
+it can have rapid scalability horizontally, which is the workload to store data can be divided to more servers.
+And so it is better for tackling problem of how to store big unstructured data with rapid scalability as companies are storing more and more data at rapid pace.
+
+2. Jelaskan kapan harus menggunakan NoSQL dan Relational Database Management System !
+
+When to use NoSQL:
+* when the data that will be stored are semi structured or unstructured datas.
+* when scalability horizontally is important as data might divided and stored to another places from other server.
+* when the database doesn't need data integrity at same level as RDBMS, and requires more flexibility in schema.
+
+When to use RDBMS
+* when the data is highly structured, and there are no changes in structure.
+* when the project needs high level of data integrity and security, which usually needed for financial transaction.
+* when datas are not having large distributted data while supporting high data traffic.
+
+3. Sebutkan contoh 2 tools/platform NoSQL selain ElasticSearch beserta keunggulan tools/platform tersebut !
+
+* MongoDB
+    * Has flexible document schemas where one data object might have different sets of field from other object.
+    * Can access data using any language in data structure that are native to the language.
+    * Easy to be scaled horizontally by creating clusters with real-time replication.
+
+* Redis
+    * Fast read and write speeds due to in-memory storage and optimized data structures for quick access.
+    * highly scalable, ideal for distributed systems that need to quickly process large amounts of data.
+    * Support strings, lists, sets, sorted sets, hashes and more.
+
+4. Jelaskan apa yang Anda ketahui dari Airflow menggunakan pemahaman dan bahasa Anda sendiri !
+Airflow is a platform to scheduling batch workflow and monitoring the process. By using airflow, we can scheduling batch data processing using multiple technology, and also monitoring flow of the process to find if the flow is successful or there are problems during batch processing.
+
+5. Jelaskan apa yang Anda ketahui dari Great Expectations menggunakan pemahaman dan bahasa Anda sendiri !
+Great Expectations is a tools using python to check and ensure data quality depending on our data requirements and standard. This can be done by testing our data using sets of rules to be met by the data to be passed as a good quality datas.
+
+6. Jelaskan apa yang Anda ketahui dari Batch Processing menggunakan pemahaman dan bahasa Anda sendiri (Definisi, Contoh Kasus Penggunaan, Tools, dll) !
+Batch Processing is data processing that are being done within periodic or scheduled manners, processing large sum of data on each run.
+Data in batch processing will be processed every scheduled time such as once every months or on particular hours everyday.
+Some of the examples of Batch processing are bank transaction, or generation of bank statement every month in banking application that requires batch processing.
+Some tools that might be used for batch processing including PySpark, AWS Glue, and Airflow as scheduler.
